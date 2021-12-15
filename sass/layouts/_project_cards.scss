@@ -1,0 +1,121 @@
+.cards-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    justify-items: center;
+    grid-column: 2;
+    grid-row-start: 2;
+
+    grid-gap: 50px;
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        width: 300px;
+        height: 300px;
+        padding: 30px 25px;
+
+        cursor: pointer;
+
+        transition: background 0.3s;
+
+        background: $bluegrey;
+
+
+        &__icon{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            i{
+                color: $bluegrey;
+                cursor: pointer;
+                transition: color 0.3s;
+
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h4{
+                font-weight: bold;
+                font-size: 19px;
+                line-height: 23px;
+                color: $white;
+
+            }
+
+            p{
+                @include text;
+                color: $grey;
+            }
+        }
+
+        &__footer{
+            display: flex;
+            align-content: center;
+            justify-content: flex-start;
+
+            gap: 10px;
+
+            li{
+                list-style: none;
+
+                a{
+                    @include text;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+
+                    color: $greylight;
+
+                    text-decoration: none;
+
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+        }
+
+        &:hover{
+            background: $primary;
+
+            p{
+                color: $black;
+            }
+
+            a{
+                color: $black;
+            }
+
+            i{
+                color: $black;
+            }
+
+            svg{
+                color: $black;
+            }
+
+            h4{
+                color: $black;
+            }
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-decoration: none;
+        }
+    }
+}

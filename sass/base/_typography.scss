@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+@mixin font{
+    font-family: 'Montserrat', sans-serif;
+} 
+
+@mixin titre{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+
+    letter-spacing: 0.02em;
+    color: $white;
+
+    .text-green{
+        color: $primary;
+    }
+}
+
+@mixin text{
+    font-size: 16px;
+    line-height: 125%;
+    color: $white;
+
+    .text-green{
+        color: $primary;
+    }
+}

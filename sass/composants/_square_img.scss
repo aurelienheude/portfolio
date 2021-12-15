@@ -1,0 +1,26 @@
+.squareimg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3/4;
+    grid-row: 1/4;
+    
+    img{
+        position: absolute;
+        width: 224px;
+        height: 224px;
+        z-index: 2;
+    }
+
+    .square{
+        position: absolute;
+        
+        right: 20px;
+        bottom: 88px;
+        width: 224px;
+        height: 224px;
+        
+        background: $primary;
+    }
+}
